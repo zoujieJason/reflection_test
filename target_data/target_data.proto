@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message EmbeddingData
+{
+    float float_data = 1;
+    bool bool_data = 2;
+}
+
+message TargetData
+{
+    string version = 1;
+    int32 major = 2;
+    int32 minor = 3;
+    EmbeddingData embedding_data = 4;
+}
